@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: sample_1
+    description: "sample dbt model"
+    columns:
+      - name: Roll_Number
+        description: "The primary key for this table"
+        

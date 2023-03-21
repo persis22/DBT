@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: date_model
+    description: "sample dbt model"
+    columns:
+      - name: date
+        description: "using date"

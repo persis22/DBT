@@ -25,3 +25,315 @@ Happy modeling!
 
 [0m10:49:55.578215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f629a665220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f629a6653a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f629a665160>]}
 [0m10:49:55.579331 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-03-21 12:47:45.464312 | 00e9c052-2288-46b4-987c-87e2f43f9e60 ==============================
+[0m12:47:45.464312 [info ] [MainThread]: Running with dbt=1.4.3
+[0m12:47:45.469211 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/persis/Desktop/github_dbt/DBT/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['example'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:47:45.469836 [debug] [MainThread]: Tracking: tracking
+[0m12:47:45.488423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f187b6fc100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f187b76d0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f187b71a280>]}
+[0m12:47:45.514652 [debug] [MainThread]: checksum: c7a5cda64f02d8b9dd20ef412f82fbb79fdce1bb359c3c5dae3d080de7f31bfd, vars: {}, profile: None, target: None, version: 1.4.3
+[0m12:47:45.522278 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:47:45.525570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '00e9c052-2288-46b4-987c-87e2f43f9e60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f187b732e20>]}
+[0m12:47:46.961029 [debug] [MainThread]: 1699: static parser successfully parsed example/my_first_dbt_model.sql
+[0m12:47:46.982615 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+[0m12:47:47.084470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '00e9c052-2288-46b4-987c-87e2f43f9e60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f187b68eeb0>]}
+[0m12:47:47.093093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '00e9c052-2288-46b4-987c-87e2f43f9e60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f187add2460>]}
+[0m12:47:47.093526 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 334 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m12:47:47.094049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '00e9c052-2288-46b4-987c-87e2f43f9e60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f187addd4c0>]}
+[0m12:47:47.095750 [info ] [MainThread]: 
+[0m12:47:47.098377 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:47:47.100411 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_my-project-persis'
+[0m12:47:47.101149 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:47:48.134820 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_my-project-persis_dbt_spersis'
+[0m12:47:48.135287 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:47:49.110317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '00e9c052-2288-46b4-987c-87e2f43f9e60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f187add2c70>]}
+[0m12:47:49.112388 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:47:49.113753 [info ] [MainThread]: 
+[0m12:47:49.125480 [debug] [Thread-1  ]: Began running node model.my_new_project.my_first_dbt_model
+[0m12:47:49.126853 [info ] [Thread-1  ]: 1 of 2 START sql table model dbt_spersis.my_first_dbt_model .................... [RUN]
+[0m12:47:49.129770 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.my_new_project.my_first_dbt_model'
+[0m12:47:49.131301 [debug] [Thread-1  ]: Began compiling node model.my_new_project.my_first_dbt_model
+[0m12:47:49.140247 [debug] [Thread-1  ]: Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+[0m12:47:49.141591 [debug] [Thread-1  ]: Timing info for model.my_new_project.my_first_dbt_model (compile): 2023-03-21 12:47:49.132107 => 2023-03-21 12:47:49.141402
+[0m12:47:49.142323 [debug] [Thread-1  ]: Began executing node model.my_new_project.my_first_dbt_model
+[0m12:47:49.164552 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:47:50.049602 [debug] [Thread-1  ]: Writing runtime sql for node "model.my_new_project.my_first_dbt_model"
+[0m12:47:50.051009 [debug] [Thread-1  ]: On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.3", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `my-project-persis`.`dbt_spersis`.`my_first_dbt_model`
+    
+    
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m12:47:53.794161 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-persis&j=bq:US:877053da-66af-4cdf-bb55-db4caeeaaa25&page=queryresults
+[0m12:47:53.820893 [debug] [Thread-1  ]: Timing info for model.my_new_project.my_first_dbt_model (execute): 2023-03-21 12:47:49.142886 => 2023-03-21 12:47:53.820831
+[0m12:47:53.822011 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '00e9c052-2288-46b4-987c-87e2f43f9e60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f187b732dc0>]}
+[0m12:47:53.822614 [info ] [Thread-1  ]: 1 of 2 OK created sql table model dbt_spersis.my_first_dbt_model ............... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 4.69s]
+[0m12:47:53.824229 [debug] [Thread-1  ]: Finished running node model.my_new_project.my_first_dbt_model
+[0m12:47:53.825273 [debug] [Thread-1  ]: Began running node model.my_new_project.my_second_dbt_model
+[0m12:47:53.825737 [info ] [Thread-1  ]: 2 of 2 START sql view model dbt_spersis.my_second_dbt_model .................... [RUN]
+[0m12:47:53.826878 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.my_new_project.my_second_dbt_model'
+[0m12:47:53.827465 [debug] [Thread-1  ]: Began compiling node model.my_new_project.my_second_dbt_model
+[0m12:47:53.832781 [debug] [Thread-1  ]: Writing injected SQL for node "model.my_new_project.my_second_dbt_model"
+[0m12:47:53.833504 [debug] [Thread-1  ]: Timing info for model.my_new_project.my_second_dbt_model (compile): 2023-03-21 12:47:53.827840 => 2023-03-21 12:47:53.833385
+[0m12:47:53.833890 [debug] [Thread-1  ]: Began executing node model.my_new_project.my_second_dbt_model
+[0m12:47:53.872328 [debug] [Thread-1  ]: Writing runtime sql for node "model.my_new_project.my_second_dbt_model"
+[0m12:47:53.873030 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:47:53.874012 [debug] [Thread-1  ]: On model.my_new_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.3", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.my_new_project.my_second_dbt_model"} */
+
+
+  create or replace view `my-project-persis`.`dbt_spersis`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `my-project-persis`.`dbt_spersis`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m12:47:56.264342 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-persis&j=bq:US:d8d781d3-2743-4fb9-ad17-088be7cd7c21&page=queryresults
+[0m12:47:56.269474 [debug] [Thread-1  ]: Timing info for model.my_new_project.my_second_dbt_model (execute): 2023-03-21 12:47:53.834148 => 2023-03-21 12:47:56.269369
+[0m12:47:56.271828 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '00e9c052-2288-46b4-987c-87e2f43f9e60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f187b6a0cd0>]}
+[0m12:47:56.279026 [info ] [Thread-1  ]: 2 of 2 OK created sql view model dbt_spersis.my_second_dbt_model ............... [[32mCREATE VIEW (0 processed)[0m in 2.45s]
+[0m12:47:56.282080 [debug] [Thread-1  ]: Finished running node model.my_new_project.my_second_dbt_model
+[0m12:47:56.287005 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:47:56.288201 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:47:56.288695 [debug] [MainThread]: Connection 'model.my_new_project.my_second_dbt_model' was properly closed.
+[0m12:47:56.289275 [info ] [MainThread]: 
+[0m12:47:56.292563 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 9.19 seconds (9.19s).
+[0m12:47:56.299196 [debug] [MainThread]: Command end result
+[0m12:47:56.315748 [info ] [MainThread]: 
+[0m12:47:56.316461 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:47:56.317288 [info ] [MainThread]: 
+[0m12:47:56.318149 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m12:47:56.319041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f187addd4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f187b748a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f187b6f3190>]}
+[0m12:47:56.319583 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-03-21 12:50:01.889097 | 6a017b48-ca27-488f-9da8-835b0d1f22ea ==============================
+[0m12:50:01.889097 [info ] [MainThread]: Running with dbt=1.4.3
+[0m12:50:01.892689 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/persis/Desktop/github_dbt/DBT/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m12:50:01.893334 [debug] [MainThread]: Tracking: tracking
+[0m12:50:01.910450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce02e040a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce02df5070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce02daa340>]}
+[0m12:50:01.935552 [debug] [MainThread]: checksum: c7a5cda64f02d8b9dd20ef412f82fbb79fdce1bb359c3c5dae3d080de7f31bfd, vars: {}, profile: None, target: None, version: 1.4.3
+[0m12:50:01.976854 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 4 files added, 0 files changed.
+[0m12:50:01.977428 [debug] [MainThread]: Partial parsing: added file: my_new_project://models/date_model/date_model.sql
+[0m12:50:01.977932 [debug] [MainThread]: Partial parsing: added file: my_new_project://models/sample_1/sample_1.sql
+[0m12:50:01.978487 [debug] [MainThread]: Partial parsing: added file: my_new_project://models/date_model/schema.yml
+[0m12:50:01.978875 [debug] [MainThread]: Partial parsing: added file: my_new_project://models/sample_1/schema.yml
+[0m12:50:01.995952 [debug] [MainThread]: 1603: static parser failed on date_model/date_model.sql
+[0m12:50:02.024911 [debug] [MainThread]: 1602: parser fallback to jinja rendering on date_model/date_model.sql
+[0m12:50:02.027277 [debug] [MainThread]: 1699: static parser successfully parsed sample_1/sample_1.sql
+[0m12:50:02.051804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6a017b48-ca27-488f-9da8-835b0d1f22ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce02c0bd90>]}
+[0m12:50:02.059536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6a017b48-ca27-488f-9da8-835b0d1f22ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce02cdae50>]}
+[0m12:50:02.059988 [info ] [MainThread]: Found 4 models, 4 tests, 0 snapshots, 0 analyses, 334 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m12:50:02.060423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a017b48-ca27-488f-9da8-835b0d1f22ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce02cdafd0>]}
+[0m12:50:02.062780 [info ] [MainThread]: 
+[0m12:50:02.064954 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:50:02.067284 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_my-project-persis'
+[0m12:50:02.067846 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:50:03.104656 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_my-project-persis_dbt_spersis'
+[0m12:50:03.105489 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m12:50:03.977612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a017b48-ca27-488f-9da8-835b0d1f22ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce02c63fa0>]}
+[0m12:50:03.980432 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:50:03.983639 [info ] [MainThread]: 
+[0m12:50:03.993395 [debug] [Thread-1  ]: Began running node model.my_new_project.date_model
+[0m12:50:03.994684 [info ] [Thread-1  ]: 1 of 4 START sql table model dbt_spersis.date_model ............................ [RUN]
+[0m12:50:03.997077 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.my_new_project.date_model'
+[0m12:50:03.998070 [debug] [Thread-1  ]: Began compiling node model.my_new_project.date_model
+[0m12:50:04.009980 [debug] [Thread-1  ]: Writing injected SQL for node "model.my_new_project.date_model"
+[0m12:50:04.010926 [debug] [Thread-1  ]: Timing info for model.my_new_project.date_model (compile): 2023-03-21 12:50:03.998893 => 2023-03-21 12:50:04.010756
+[0m12:50:04.011560 [debug] [Thread-1  ]: Began executing node model.my_new_project.date_model
+[0m12:50:04.171301 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:50:05.164336 [debug] [Thread-1  ]: Writing runtime sql for node "model.my_new_project.date_model"
+[0m12:50:05.166220 [debug] [Thread-1  ]: On model.my_new_project.date_model: /* {"app": "dbt", "dbt_version": "1.4.3", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.my_new_project.date_model"} */
+
+  
+    
+
+    create or replace table `my-project-persis`.`dbt_spersis`.`date_model`
+    
+    
+    OPTIONS()
+    as (
+      
+
+/* To display previous dates*//* To display current dates*/select '2023-03-21' as Date_time, Roll_Number from  `my-project-persis.dbt_spersis.eligible_candidates`
+    );
+  
+[0m12:50:09.195024 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-persis&j=bq:US:a72e1dc7-7e07-4e93-aa16-c76d7425f03e&page=queryresults
+[0m12:50:09.289421 [debug] [Thread-1  ]: Timing info for model.my_new_project.date_model (execute): 2023-03-21 12:50:04.012010 => 2023-03-21 12:50:09.289215
+[0m12:50:09.293400 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a017b48-ca27-488f-9da8-835b0d1f22ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce002be310>]}
+[0m12:50:09.294954 [info ] [Thread-1  ]: 1 of 4 OK created sql table model dbt_spersis.date_model ....................... [[32mCREATE TABLE (143.0 rows, 1.7 KB processed)[0m in 5.30s]
+[0m12:50:09.299375 [debug] [Thread-1  ]: Finished running node model.my_new_project.date_model
+[0m12:50:09.301163 [debug] [Thread-1  ]: Began running node model.my_new_project.my_first_dbt_model
+[0m12:50:09.303662 [info ] [Thread-1  ]: 2 of 4 START sql table model dbt_spersis.my_first_dbt_model .................... [RUN]
+[0m12:50:09.306137 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.my_new_project.my_first_dbt_model'
+[0m12:50:09.307024 [debug] [Thread-1  ]: Began compiling node model.my_new_project.my_first_dbt_model
+[0m12:50:09.318532 [debug] [Thread-1  ]: Writing injected SQL for node "model.my_new_project.my_first_dbt_model"
+[0m12:50:09.319526 [debug] [Thread-1  ]: Timing info for model.my_new_project.my_first_dbt_model (compile): 2023-03-21 12:50:09.309491 => 2023-03-21 12:50:09.319361
+[0m12:50:09.320617 [debug] [Thread-1  ]: Began executing node model.my_new_project.my_first_dbt_model
+[0m12:50:09.325608 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:50:10.107713 [debug] [Thread-1  ]: Writing runtime sql for node "model.my_new_project.my_first_dbt_model"
+[0m12:50:10.108778 [debug] [Thread-1  ]: On model.my_new_project.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.3", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.my_new_project.my_first_dbt_model"} */
+
+  
+    
+
+    create or replace table `my-project-persis`.`dbt_spersis`.`my_first_dbt_model`
+    
+    
+    OPTIONS()
+    as (
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+    );
+  
+[0m12:50:13.699559 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-persis&j=bq:US:182fbcf0-b6b5-45a0-9502-71cfe921c042&page=queryresults
+[0m12:50:13.703422 [debug] [Thread-1  ]: Timing info for model.my_new_project.my_first_dbt_model (execute): 2023-03-21 12:50:09.321377 => 2023-03-21 12:50:13.703279
+[0m12:50:13.704752 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a017b48-ca27-488f-9da8-835b0d1f22ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce01b03f70>]}
+[0m12:50:13.705640 [info ] [Thread-1  ]: 2 of 4 OK created sql table model dbt_spersis.my_first_dbt_model ............... [[32mCREATE TABLE (2.0 rows, 0 processed)[0m in 4.40s]
+[0m12:50:13.706618 [debug] [Thread-1  ]: Finished running node model.my_new_project.my_first_dbt_model
+[0m12:50:13.707405 [debug] [Thread-1  ]: Began running node model.my_new_project.sample_1
+[0m12:50:13.708239 [info ] [Thread-1  ]: 3 of 4 START sql table model dbt_spersis.sample_1 .............................. [RUN]
+[0m12:50:13.709935 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.my_new_project.sample_1'
+[0m12:50:13.710655 [debug] [Thread-1  ]: Began compiling node model.my_new_project.sample_1
+[0m12:50:13.716296 [debug] [Thread-1  ]: Writing injected SQL for node "model.my_new_project.sample_1"
+[0m12:50:13.717181 [debug] [Thread-1  ]: Timing info for model.my_new_project.sample_1 (compile): 2023-03-21 12:50:13.711160 => 2023-03-21 12:50:13.717056
+[0m12:50:13.717825 [debug] [Thread-1  ]: Began executing node model.my_new_project.sample_1
+[0m12:50:13.722586 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:50:14.830974 [debug] [Thread-1  ]: Writing runtime sql for node "model.my_new_project.sample_1"
+[0m12:50:14.832703 [debug] [Thread-1  ]: On model.my_new_project.sample_1: /* {"app": "dbt", "dbt_version": "1.4.3", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.my_new_project.sample_1"} */
+
+  
+    
+
+    create or replace table `my-project-persis`.`dbt_spersis`.`sample_1`
+    
+    
+    OPTIONS()
+    as (
+      
+
+
+select Roll_Number
+from `my-project-persis.dbt_spersis.eligible_candidates`
+    );
+  
+[0m12:50:18.307435 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-persis&j=bq:US:7f6edcc9-0e4a-4f40-acd3-e229c4d1aff9&page=queryresults
+[0m12:50:18.309670 [debug] [Thread-1  ]: Timing info for model.my_new_project.sample_1 (execute): 2023-03-21 12:50:13.718316 => 2023-03-21 12:50:18.309607
+[0m12:50:18.310564 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a017b48-ca27-488f-9da8-835b0d1f22ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce01b03f40>]}
+[0m12:50:18.311115 [info ] [Thread-1  ]: 3 of 4 OK created sql table model dbt_spersis.sample_1 ......................... [[32mCREATE TABLE (143.0 rows, 1.7 KB processed)[0m in 4.60s]
+[0m12:50:18.311651 [debug] [Thread-1  ]: Finished running node model.my_new_project.sample_1
+[0m12:50:18.312272 [debug] [Thread-1  ]: Began running node model.my_new_project.my_second_dbt_model
+[0m12:50:18.313472 [info ] [Thread-1  ]: 4 of 4 START sql view model dbt_spersis.my_second_dbt_model .................... [RUN]
+[0m12:50:18.314796 [debug] [Thread-1  ]: Acquiring new bigquery connection 'model.my_new_project.my_second_dbt_model'
+[0m12:50:18.315423 [debug] [Thread-1  ]: Began compiling node model.my_new_project.my_second_dbt_model
+[0m12:50:18.321680 [debug] [Thread-1  ]: Writing injected SQL for node "model.my_new_project.my_second_dbt_model"
+[0m12:50:18.322257 [debug] [Thread-1  ]: Timing info for model.my_new_project.my_second_dbt_model (compile): 2023-03-21 12:50:18.315695 => 2023-03-21 12:50:18.322169
+[0m12:50:18.322614 [debug] [Thread-1  ]: Began executing node model.my_new_project.my_second_dbt_model
+[0m12:50:18.364147 [debug] [Thread-1  ]: Writing runtime sql for node "model.my_new_project.my_second_dbt_model"
+[0m12:50:18.364805 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m12:50:18.365487 [debug] [Thread-1  ]: On model.my_new_project.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.4.3", "profile_name": "dbt_bigquery", "target_name": "dev", "node_id": "model.my_new_project.my_second_dbt_model"} */
+
+
+  create or replace view `my-project-persis`.`dbt_spersis`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `my-project-persis`.`dbt_spersis`.`my_first_dbt_model`
+where id = 1;
+
+
+[0m12:50:20.663828 [debug] [Thread-1  ]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=my-project-persis&j=bq:US:1b1b381e-968b-469f-be18-a749bb9558a2&page=queryresults
+[0m12:50:20.667543 [debug] [Thread-1  ]: Timing info for model.my_new_project.my_second_dbt_model (execute): 2023-03-21 12:50:18.322847 => 2023-03-21 12:50:20.667436
+[0m12:50:20.669082 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a017b48-ca27-488f-9da8-835b0d1f22ea', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce00258e20>]}
+[0m12:50:20.669957 [info ] [Thread-1  ]: 4 of 4 OK created sql view model dbt_spersis.my_second_dbt_model ............... [[32mCREATE VIEW (0 processed)[0m in 2.35s]
+[0m12:50:20.675520 [debug] [Thread-1  ]: Finished running node model.my_new_project.my_second_dbt_model
+[0m12:50:20.678014 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m12:50:20.679160 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:50:20.679607 [debug] [MainThread]: Connection 'model.my_new_project.my_second_dbt_model' was properly closed.
+[0m12:50:20.680101 [info ] [MainThread]: 
+[0m12:50:20.680938 [info ] [MainThread]: Finished running 3 table models, 1 view model in 0 hours 0 minutes and 18.62 seconds (18.62s).
+[0m12:50:20.682320 [debug] [MainThread]: Command end result
+[0m12:50:20.697643 [info ] [MainThread]: 
+[0m12:50:20.701409 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:50:20.702783 [info ] [MainThread]: 
+[0m12:50:20.703829 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m12:50:20.722878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce002e6ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce02dd8dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce00258e20>]}
+[0m12:50:20.723595 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-03-21 12:51:13.722681 | 65847696-10b4-4d75-aee5-21a7f34fc984 ==============================
+[0m12:51:13.722681 [info ] [MainThread]: Running with dbt=1.4.3
+[0m12:51:13.724311 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/home/persis/Desktop/github_dbt/DBT/.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m12:51:13.724784 [debug] [MainThread]: Tracking: tracking
+[0m12:51:13.735707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6cf30f3520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6cf30f38b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6cf30f39a0>]}
+[0m12:51:13.736674 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-447v2gs0'
+[0m12:51:13.737533 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m12:51:14.009840 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m12:51:14.011117 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json
+[0m12:51:14.105828 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/calogica/dbt_date.json 200
+[0m12:51:14.116338 [info ] [MainThread]: Installing calogica/dbt_date
+[0m12:51:29.514437 [info ] [MainThread]:   Installed from version 0.7.2
+[0m12:51:29.515173 [info ] [MainThread]:   Up to date!
+[0m12:51:29.515937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '65847696-10b4-4d75-aee5-21a7f34fc984', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6cf545fcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6cf3126fd0>]}
+[0m12:51:29.516819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6cf545fcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6cf31269d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6cf3126a90>]}
+[0m12:51:29.517393 [debug] [MainThread]: Flushing usage events
