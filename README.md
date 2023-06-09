@@ -1,4 +1,4 @@
-![Alt Text]((https://github.com/persis22/DBT/blob/master/.gitignore))
+![Alt Text](https://github.com/persis22/DBT/blob/master/.gitignore)
 
 Welcome to your new dbt project!
 
