@@ -1,4 +1,4 @@
-![Alt Text](path/to/image.png)
+![Alt Text](https://github.com/persis22/DBT/tree/master/tests)
 
 Welcome to your new dbt project!
 
