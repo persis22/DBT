@@ -9,7 +9,7 @@
    ```
    curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.3.3/docker-compose.yaml'
    ```
-![image](https://github.com/blueocean-ai/data/assets/132383380/bb4ca7ed-e8e1-4590-9342-23f0d32ffa42)
+
 
    * Open the code editor and check whether docker-compose.yaml file is downloaded or not.
    * open the terminal in vs code 
@@ -35,13 +35,13 @@
 
 3. Make sure airflow scheduler is also running as it automatically picks up the DAG within the dag folder and schedules it based on start_date.
 
-![image](https://github.com/blueocean-ai/data/assets/132383380/4c338ae7-d15b-4232-95b1-b6742f43a998)
+
 
 4. The web server can now be accessed through local host (http://0.0.0.0:8080) with the default username and password being ‘airflow’ for both.
 
 5. Create a connection using aws_access_key and aws_secret_access_id in the airflow by navigating to admin > conections > new in airflow web UI.
 
-![image](https://github.com/blueocean-ai/data/assets/132383380/5425f57d-67d8-4c59-a4c5-4a91744063b8)
+
 
 6. Make sure the AWS credentials are correct and has appropriate permissions as this connection allows us to access S3 files locally.
 
